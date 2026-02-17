@@ -1,6 +1,6 @@
 ---
 name: blade-patterns
-description: Best practices for Blade templating in Sage themes. Covers directives, components, View Composers, layouts, and the template hierarchy.
+description: Best practices for Blade templating in Radicle themes. Covers directives, components, View Composers, layouts, and the template hierarchy.
 ---
 
 # Blade Patterns — Sage Theme Templating
@@ -36,7 +36,7 @@ description: Best practices for Blade templating in Sage themes. Covers directiv
 
 ---
 
-## Template Hierarchy in Sage
+## Template Hierarchy in Radicle
 
 ```plaintext
 WordPress request

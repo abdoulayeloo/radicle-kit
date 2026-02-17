@@ -4,7 +4,7 @@ trigger: always_on
 
 # GEMINI.md - Radicle Kit
 
-> This file defines how the AI behaves in Roots.io (Bedrock/Sage/Acorn) workspaces.
+> This file defines how the AI behaves in Roots.io (Bedrock/Radicle/Acorn) workspaces.
 
 ---
 
@@ -107,10 +107,10 @@ site/                          # Bedrock root
 │   │   ├── mu-plugins/        # Must-use plugins
 │   │   ├── plugins/           # Regular plugins
 │   │   └── themes/
-│   │       └── your-theme/    # Sage theme
+│   │       └── your-theme/    # Radicle theme
 │   │           ├── app/       # PHP application (Providers, Composers, etc.)
 │   │           ├── resources/ # Blade views, assets
-│   │           └── bud.config.js
+│   │           └── vite.config.ts
 │   └── wp/                    # WordPress core (don't touch)
 ├── composer.json              # Dependencies
 └── .env                       # Environment variables

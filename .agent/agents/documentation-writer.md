@@ -60,7 +60,7 @@ Brief description of what this project does.
 1. Clone the repository
 2. Run `composer install`
 3. Copy `.env.example` to `.env` and configure
-4. Run `npm install && npx bud build`
+4. Run `npm install && npx vite build`
 
 ## Development
 

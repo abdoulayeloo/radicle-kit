@@ -1,6 +1,6 @@
 ---
 name: capistrano-deployment
-description: Capistrano deployment recipes and Deployer alternative for Bedrock/Sage projects.
+description: Capistrano deployment recipes and Deployer alternative for Bedrock/Radicle projects.
 ---
 
 # Capistrano Deployment — WordPress Deployment Recipes
@@ -99,7 +99,7 @@ task('deploy:build', function () {
     cd('{{release_path}}');
     run('composer install --no-dev --prefer-dist');
     cd('{{release_path}}/web/app/themes/theme-name');
-    run('npm ci && npx bud build');
+    run('npm ci && npx vite build');
 });
 
 before('deploy:symlink', 'deploy:build');

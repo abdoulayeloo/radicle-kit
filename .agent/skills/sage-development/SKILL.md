@@ -1,6 +1,6 @@
 ---
 name: sage-development
-description: Sage theme development patterns, directory structure, setup conventions, Bud build tooling, and asset management.
+description: Radicle theme development patterns, directory structure, setup conventions, Vite build tooling, and asset management.
 ---
 
 # Sage Development — Theme Framework
@@ -28,7 +28,7 @@ theme-name/
 │   ├── styles/             # CSS/SCSS (app.css, editor.css)
 │   └── images/             # Static images
 ├── public/                 # Compiled assets (don't edit)
-├── bud.config.js           # Build configuration
+├── vite.config.ts           # Build configuration
 ├── composer.json           # PHP dependencies
 ├── package.json            # Node dependencies
 └── tailwind.config.js      # Tailwind (if used)
@@ -58,7 +58,7 @@ add_action('after_setup_theme', function () {
 ## Bud Configuration
 
 ```javascript
-// bud.config.js
+// vite.config.ts
 export default async (app) => {
   app
     .entry("app", ["@scripts/app", "@styles/app"])
@@ -74,10 +74,10 @@ export default async (app) => {
 
 ```bash
 # Development (with hot reload)
-npx bud dev
+npx vite dev
 
 # Production build
-npx bud build
+npx vite build
 
 # Composer (PHP dependencies)
 composer install
@@ -97,4 +97,4 @@ wp acorn vendor:publish     # Publish package configs
 | Logic      | `app/` — PHP classes only                                    |
 | Assets     | `resources/scripts/` + `resources/styles/` — source files    |
 | Public     | `public/` — compiled output (gitignored)                     |
-| Config     | Root files: `bud.config.js`, `composer.json`, `package.json` |
+| Config     | Root files: `vite.config.ts`, `composer.json`, `package.json` |

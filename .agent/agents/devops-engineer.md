@@ -190,7 +190,7 @@ jobs:
       - name: Build assets
         run: |
           npm ci
-          npx bud build
+          npx vite build
 
       - name: Deploy to production
         run: |

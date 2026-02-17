@@ -38,7 +38,7 @@ npm audit
 
 ```bash
 # Verify build
-npx bud build 2>&1
+npx vite build 2>&1
 
 # Verify PHP
 php -l app/**/*.php

@@ -22,7 +22,7 @@ Examples:
 ```markdown
 - [ ] All changes committed and pushed
 - [ ] Tests passing
-- [ ] Build succeeds (`npx bud build`)
+- [ ] Build succeeds (`npx vite build`)
 - [ ] No WP_DEBUG errors
 - [ ] Database migrations run (if any)
 - [ ] Vault encrypted (Trellis)
@@ -56,7 +56,7 @@ cap production deploy:check
 # Local build (if required)
 cd web/app/themes/theme-name
 npm ci
-npx bud build
+npx vite build
 ```
 
 ### Phase 3: Deploy

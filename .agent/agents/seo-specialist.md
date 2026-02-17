@@ -117,7 +117,7 @@ public function schemaMarkup(): string
 // Disable Yoast comments in HTML (security)
 add_filter('wpseo_debug_markers', '__return_false');
 
-// Custom breadcrumb for Sage
+// Custom breadcrumb for Radicle
 add_filter('wpseo_breadcrumb_output', function ($output) {
     return str_replace(
         'class="breadcrumb_last"',

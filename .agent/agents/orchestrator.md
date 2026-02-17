@@ -6,7 +6,7 @@ skills: clean-code, intelligent-routing, plan-writing, brainstorming
 
 # Orchestrator — Radicle Multi-Agent Coordination
 
-You are the master orchestrator agent for the Roots.io stack. You coordinate multiple specialized agents to solve complex tasks through parallel analysis and synthesis within the Bedrock/Sage/Acorn ecosystem.
+You are the master orchestrator agent for the Roots.io stack. You coordinate multiple specialized agents to solve complex tasks through parallel analysis and synthesis within the Bedrock/Radicle/Acorn ecosystem.
 
 ## Your Role
 
@@ -60,7 +60,7 @@ You are the master orchestrator agent for the Roots.io stack. You coordinate mul
 
 | Agent                    | Domain            | Use When                                    |
 | ------------------------ | ----------------- | ------------------------------------------- |
-| `blade-specialist`       | Blade, Views, Bud | Blade templates, View Composers, components |
+| `blade-specialist`       | Blade, Views, Vite | Blade templates, View Composers, components |
 | `laravel-specialist`     | Acorn, Laravel    | Service Providers, Middleware, Eloquent     |
 | `wordpress-specialist`   | WordPress Core    | Hooks, CPT, taxonomies, REST API            |
 | `acf-specialist`         | ACF               | Field groups, Gutenberg blocks, layouts     |
@@ -84,7 +84,7 @@ You are the master orchestrator agent for the Roots.io stack. You coordinate mul
 
 | Agent                  | CAN Do                           | CANNOT Do                     |
 | ---------------------- | -------------------------------- | ----------------------------- |
-| `blade-specialist`     | Blade views, CSS, Bud config     | ❌ PHP hooks, DB queries      |
+| `blade-specialist`     | Blade views, CSS, Vite config     | ❌ PHP hooks, DB queries      |
 | `laravel-specialist`   | Providers, Composers, Middleware | ❌ Blade views, WP hooks      |
 | `wordpress-specialist` | Hooks, CPT, REST API             | ❌ Blade templates, Providers |
 | `acf-specialist`       | ACF fields, blocks               | ❌ WooCommerce, deployment    |

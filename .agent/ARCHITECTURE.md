@@ -35,7 +35,7 @@ Specialist AI personas for the Roots.io ecosystem.
 | ------------------------ | ---------------------------- | ------------------------------------------------------------ |
 | `orchestrator`           | Multi-agent coordination     | intelligent-routing, plan-writing, brainstorming             |
 | `project-planner`        | Discovery, task planning     | brainstorming, plan-writing                                  |
-| `blade-specialist`       | Blade, View Composers, Bud   | blade-patterns, sage-development, clean-code                 |
+| `blade-specialist`       | Blade, View Composers, Vite   | blade-patterns, sage-development, clean-code                 |
 | `laravel-specialist`     | Acorn, Service Providers, DI | laravel-patterns, clean-code                                 |
 | `wordpress-specialist`   | Hooks, CPT, WP_Query, REST   | wordpress-patterns, clean-code                               |
 | `database-architect`     | WordPress DB, Eloquent       | database-design, clean-code                                  |
@@ -43,7 +43,7 @@ Specialist AI personas for the Roots.io ecosystem.
 | `security-auditor`       | WordPress & Laravel security | security-fundamentals, wordpress-patterns                    |
 | `test-engineer`          | PestPHP, PHPUnit, Cypress    | testing-patterns, clean-code                                 |
 | `debugger`               | Query Monitor, Xdebug        | systematic-debugging, clean-code                             |
-| `performance-optimizer`  | Object cache, queries, Bud   | performance-profiling, clean-code                            |
+| `performance-optimizer`  | Object cache, queries, Vite   | performance-profiling, clean-code                            |
 | `seo-specialist`         | WordPress SEO, schema markup | seo-fundamentals                                             |
 | `documentation-writer`   | Roots.io documentation       | clean-code                                                   |
 | `explorer-agent`         | Codebase analysis            | bedrock-structure, sage-development                          |
@@ -61,7 +61,7 @@ Modular knowledge domains that agents can load on-demand.
 | Skill              | Description                                  |
 | ------------------ | -------------------------------------------- |
 | `blade-patterns`   | Blade directives, components, View Composers |
-| `sage-development` | Sage theme structure, `app/`, `resources/`   |
+| `sage-development` | Radicle theme structure, `app/`, `resources/`   |
 | `acf-patterns`     | ACF field groups, Flexible Content, blocks   |
 
 ### Backend & PHP
