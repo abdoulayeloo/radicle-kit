@@ -5,6 +5,7 @@ const path = require("path");
 
 const AGENT_DIR = ".agent";
 const FORCE_FLAG = "--force";
+const UPDATE_FLAG = "--update";
 
 // Colors for terminal output
 const green = (text) => `\x1b[32m${text}\x1b[0m`;
@@ -47,6 +48,7 @@ function copyDirRecursive(src, dest) {
 function main() {
   const args = process.argv.slice(2);
   const force = args.includes(FORCE_FLAG);
+  const update = args.includes(UPDATE_FLAG);
   const targetDir = process.cwd();
   const targetAgent = path.join(targetDir, AGENT_DIR);
   const sourceAgent = path.resolve(__dirname, "..", AGENT_DIR);
@@ -62,16 +64,25 @@ function main() {
 
   // Check if target already has .agent/
   if (fs.existsSync(targetAgent)) {
-    if (!force) {
+    if (!force && !update) {
       console.log(yellow("  ⚠ .agent/ already exists in this directory."));
       console.log("");
-      console.log(`  Run ${bold("roots-kit --force")} to overwrite.`);
+      console.log(
+        `  Run ${bold("roots-kit --update")} to update files in place.`,
+      );
+      console.log(
+        `  Run ${bold("roots-kit --force")} to overwrite everything.`,
+      );
       console.log("");
       process.exit(0);
     }
 
-    console.log(yellow("  ⚠ Overwriting existing .agent/ directory..."));
-    fs.rmSync(targetAgent, { recursive: true, force: true });
+    if (force) {
+      console.log(yellow("  ⚠ Overwriting existing .agent/ directory..."));
+      fs.rmSync(targetAgent, { recursive: true, force: true });
+    } else {
+      console.log(yellow("  ↻ Updating existing .agent/ directory..."));
+    }
   }
 
   // Copy .agent/ to target
@@ -79,12 +90,13 @@ function main() {
   const fileCount = copyDirRecursive(sourceAgent, targetAgent);
 
   console.log("");
-  console.log(green(`  ✓ Done! ${fileCount} files copied to .agent/`));
+  const verb = update ? "updated" : "copied";
+  console.log(green(`  ✓ Done! ${fileCount} files ${verb} to .agent/`));
   console.log("");
   console.log(dim("  Your AI agents are ready. Available slash commands:"));
-  console.log(`    ${bold("/create")}     Create features for Bedrock/Sage`);
+  console.log(`    ${bold("/create")}     Create features for Bedrock/Radicle`);
   console.log(`    ${bold("/debug")}      Systematic WordPress debugging`);
-  console.log(`    ${bold("/deploy")}     Deploy via Trellis or Capistrano`);
+  console.log(`    ${bold("/deploy")}     Deploy via Trellis or Mina`);
   console.log(`    ${bold("/enhance")}    Improve existing code`);
   console.log(`    ${bold("/plan")}       Task breakdown & roadmap`);
   console.log(`    ${bold("/status")}     Project health check`);
