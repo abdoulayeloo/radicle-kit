@@ -30,7 +30,7 @@ version: 1.0.0
 | **Authentication**   | "login", "auth", "password", "nonce"                    | `security-auditor` + `wordpress-specialist` | ✅ YES       |
 | **Bug Fix**          | "error", "bug", "not working", "broken", "white screen" | `debugger`                                  | ✅ YES       |
 | **Testing**          | "test", "PestPHP", "PHPUnit", "coverage"                | `test-engineer`                             | ✅ YES       |
-| **Deploy**           | "deploy", "Trellis", "Capistrano", "production"         | `devops-engineer`                           | ✅ YES       |
+| **Deploy**           | "deploy", "Trellis", "Mina", "production"         | `devops-engineer`                           | ✅ YES       |
 | **Security**         | "security", "vulnerability", "XSS", "SQL injection"     | `security-auditor`                          | ✅ YES       |
 | **Performance**      | "slow", "optimize", "cache", "Query Monitor"            | `performance-optimizer`                     | ✅ YES       |
 | **SEO**              | "SEO", "meta", "sitemap", "schema markup", "Yoast"      | `seo-specialist`                            | ✅ YES       |
@@ -50,7 +50,7 @@ version: 1.0.0
 | **WooCommerce**   | woocommerce, product, cart, checkout, order, payment       | `woocommerce-specialist` |
 | **Database**      | database, schema, migration, query, table, index           | `database-architect`     |
 | **Testing**       | test, pest, phpunit, mock, coverage, brain monkey          | `test-engineer`          |
-| **DevOps**        | deploy, trellis, capistrano, ansible, nginx, CI/CD         | `devops-engineer`        |
+| **DevOps**        | deploy, trellis, mina, ansible, nginx, CI/CD         | `devops-engineer`        |
 | **Debug**         | error, bug, crash, white screen, debug, xdebug             | `debugger`               |
 | **Performance**   | slow, cache, transient, optimize, query monitor            | `performance-optimizer`  |
 | **SEO**           | seo, meta, snippet, yoast, rankmath, sitemap               | `seo-specialist`         |

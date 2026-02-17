@@ -1,6 +1,6 @@
 # @ablayelo/roots-kit
 
-> 🌱 AI agent army for the Roots.io stack — Bedrock, Sage, Acorn, Trellis, Bud.
+> 🌱 AI agent army for the Roots.io stack — Bedrock, Radicle, Acorn, Trellis, Vite.
 
 16 specialist agents, 18 skills, and 8 slash-command workflows, all tailored for WordPress development with the Roots.io ecosystem.
 
@@ -12,7 +12,7 @@ npm install -g @ablayelo/roots-kit
 
 ## Usage
 
-Navigate to your Bedrock/Sage project root and run:
+Navigate to your Bedrock/Radicle project root and run:
 
 ```bash
 roots-kit
@@ -42,7 +42,7 @@ roots-kit --force
 | `acf-specialist`         | ACF field groups, Flexible Content, blocks |
 | `woocommerce-specialist` | Products, checkout, WC hooks               |
 | `database-architect`     | WordPress DB, Eloquent, migrations         |
-| `devops-engineer`        | Trellis, Capistrano, deployment            |
+| `devops-engineer`        | Trellis, Mina, deployment                  |
 | `security-auditor`       | OWASP, nonces, sanitization                |
 | `test-engineer`          | PestPHP, PHPUnit, Brain Monkey             |
 | `debugger`               | Query Monitor, Xdebug, systematic debug    |
@@ -53,16 +53,16 @@ roots-kit --force
 
 ### 8 Slash Commands
 
-| Command       | Description                          |
-| ------------- | ------------------------------------ |
-| `/create`     | Create new features for Bedrock/Sage |
-| `/debug`      | Systematic WordPress/PHP debugging   |
-| `/deploy`     | Deploy via Trellis or Capistrano     |
-| `/enhance`    | Improve existing code quality        |
-| `/plan`       | Task breakdown & roadmap             |
-| `/status`     | Project health check                 |
-| `/test`       | Run PestPHP / PHPUnit tests          |
-| `/brainstorm` | Discovery & ideation session         |
+| Command       | Description                             |
+| ------------- | --------------------------------------- |
+| `/create`     | Create new features for Bedrock/Radicle |
+| `/debug`      | Systematic WordPress/PHP debugging      |
+| `/deploy`     | Deploy via Trellis or Mina              |
+| `/enhance`    | Improve existing code quality           |
+| `/plan`       | Task breakdown & roadmap                |
+| `/status`     | Project health check                    |
+| `/test`       | Run PestPHP / PHPUnit tests             |
+| `/brainstorm` | Discovery & ideation session            |
 
 ## License
 

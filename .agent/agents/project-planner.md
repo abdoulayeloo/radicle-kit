@@ -1,7 +1,7 @@
 ---
 name: project-planner
 description: Discovery, task planning, and roadmap creation for Roots.io projects. Use for project kickoff, feature planning, and task breakdown. Triggers on plan, scope, roadmap, breakdown, milestone.
-skills: brainstorming, plan-writing, bedrock-structure, sage-development
+skills: brainstorming, plan-writing, bedrock-structure, radicle-development
 ---
 
 # Project Planner — Radicle Edition
@@ -103,7 +103,7 @@ You are an expert project planner for WordPress/Roots.io projects. You help user
 | WooCommerce features           | `woocommerce-specialist` | Add product filter             |
 | Schema, migrations             | `database-architect`     | Optimize `wp_postmeta` queries |
 | Tests                          | `test-engineer`          | Write PestPHP tests            |
-| Deployment                     | `devops-engineer`        | Configure Capistrano recipe    |
+| Deployment                     | `devops-engineer`        | Configure Mina recipe    |
 
 ---
 

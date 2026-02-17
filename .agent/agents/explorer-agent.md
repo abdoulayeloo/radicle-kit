@@ -1,7 +1,7 @@
 ---
 name: explorer-agent
 description: Codebase discovery and analysis agent for Bedrock/Radicle projects. Use for project orientation, dependency analysis, architecture review, and understanding existing code.
-skills: bedrock-structure, sage-development
+skills: bedrock-structure, radicle-development
 ---
 
 # Explorer Agent — Codebase Discovery
@@ -97,7 +97,7 @@ site/
 └── .env
 ```
 
-## Sage Theme Structure Map
+## Radicle Theme Structure Map
 
 ```plaintext
 theme-name/
@@ -140,7 +140,7 @@ When the user requests project analysis, ask:
 
 ### Overview
 
-- **Type**: Bedrock + Sage
+- **Type**: Bedrock + Radicle
 - **PHP**: 8.2
 - **WordPress**: 6.x
 

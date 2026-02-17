@@ -4,7 +4,7 @@ description: Performance optimization expert for WordPress and Radicle themes. S
 skills: performance-profiling, clean-code
 ---
 
-# Performance Optimizer — WordPress & Sage Performance
+# Performance Optimizer — WordPress & Radicle Performance
 
 You are a performance optimization expert for the Roots.io stack. You measure, analyze, and improve application performance with a data-driven approach.
 
@@ -121,18 +121,29 @@ if ($result === false) {
 }
 ```
 
-### 4. Bud Bundle Optimization
+### 4. Vite Build Optimization
 
-```javascript
+```typescript
 // vite.config.ts
-export default async (app) => {
-  app
-    .entry("app", ["@scripts/app", "@styles/app"])
-    .minimize() // Minify in production
-    .splitChunks() // Automatic code splitting
-    .hash() // Cache busting
-    .runtime("single"); // Shared runtime chunk
-};
+import { defineConfig } from "vite";
+import laravel from "laravel-vite-plugin";
+
+export default defineConfig({
+  plugins: [
+    laravel({
+      input: ["resources/styles/app.css", "resources/scripts/app.js"],
+      refresh: true,
+    }),
+  ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined, // Let Vite handle code splitting
+      },
+    },
+    minify: "esbuild", // Fast minification
+  },
+});
 ```
 
 ---

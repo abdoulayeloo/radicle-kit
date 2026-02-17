@@ -37,7 +37,7 @@ description: Brainstorming and ideation techniques for Roots.io projects. Featur
 | Page layouts  | Flexible Content (ACF) | Simple pages → standard template           |
 | API endpoint  | WP REST API            | Internal only → `admin-ajax.php`           |
 | Cache layer   | Transients             | Persistent needed → Object Cache           |
-| Deployment    | Trellis                | Shared hosting → Capistrano/Deployer       |
+| Deployment    | Trellis                | Shared hosting → Mina/Deployer       |
 | Testing       | PestPHP                | Existing PHPUnit → keep PHPUnit            |
 
 ## Feature Discovery Questions

@@ -1,6 +1,6 @@
 # Radicle Kit Architecture
 
-> AI Agent Toolkit for the Roots.io Stack (Bedrock · Sage · Acorn · Trellis · Bud)
+> AI Agent Toolkit for the Roots.io Stack (Bedrock · Radicle · Acorn · Trellis · Vite)
 
 ---
 
@@ -31,24 +31,24 @@ Radicle Kit is a modular AI agent system consisting of:
 
 Specialist AI personas for the Roots.io ecosystem.
 
-| Agent                    | Focus                        | Skills Used                                                  |
-| ------------------------ | ---------------------------- | ------------------------------------------------------------ |
-| `orchestrator`           | Multi-agent coordination     | intelligent-routing, plan-writing, brainstorming             |
-| `project-planner`        | Discovery, task planning     | brainstorming, plan-writing                                  |
-| `blade-specialist`       | Blade, View Composers, Vite   | blade-patterns, sage-development, clean-code                 |
-| `laravel-specialist`     | Acorn, Service Providers, DI | laravel-patterns, clean-code                                 |
-| `wordpress-specialist`   | Hooks, CPT, WP_Query, REST   | wordpress-patterns, clean-code                               |
-| `database-architect`     | WordPress DB, Eloquent       | database-design, clean-code                                  |
-| `devops-engineer`        | Trellis, Capistrano, Bedrock | trellis-deployment, capistrano-deployment, bedrock-structure |
-| `security-auditor`       | WordPress & Laravel security | security-fundamentals, wordpress-patterns                    |
-| `test-engineer`          | PestPHP, PHPUnit, Cypress    | testing-patterns, clean-code                                 |
-| `debugger`               | Query Monitor, Xdebug        | systematic-debugging, clean-code                             |
-| `performance-optimizer`  | Object cache, queries, Vite   | performance-profiling, clean-code                            |
-| `seo-specialist`         | WordPress SEO, schema markup | seo-fundamentals                                             |
-| `documentation-writer`   | Roots.io documentation       | clean-code                                                   |
-| `explorer-agent`         | Codebase analysis            | bedrock-structure, sage-development                          |
-| `acf-specialist`         | ACF field groups, blocks     | acf-patterns, blade-patterns                                 |
-| `woocommerce-specialist` | Products, orders, WC hooks   | wordpress-patterns, laravel-patterns                         |
+| Agent                    | Focus                        | Skills Used                                            |
+| ------------------------ | ---------------------------- | ------------------------------------------------------ |
+| `orchestrator`           | Multi-agent coordination     | intelligent-routing, plan-writing, brainstorming       |
+| `project-planner`        | Discovery, task planning     | brainstorming, plan-writing                            |
+| `blade-specialist`       | Blade, View Composers, Vite  | blade-patterns, radicle-development, clean-code        |
+| `laravel-specialist`     | Acorn, Service Providers, DI | laravel-patterns, clean-code                           |
+| `wordpress-specialist`   | Hooks, CPT, WP_Query, REST   | wordpress-patterns, clean-code                         |
+| `database-architect`     | WordPress DB, Eloquent       | database-design, clean-code                            |
+| `devops-engineer`        | Trellis, Mina, Bedrock       | trellis-deployment, mina-deployment, bedrock-structure |
+| `security-auditor`       | WordPress & Laravel security | security-fundamentals, wordpress-patterns              |
+| `test-engineer`          | PestPHP, PHPUnit, Cypress    | testing-patterns, clean-code                           |
+| `debugger`               | Query Monitor, Xdebug        | systematic-debugging, clean-code                       |
+| `performance-optimizer`  | Object cache, queries, Vite  | performance-profiling, clean-code                      |
+| `seo-specialist`         | WordPress SEO, schema markup | seo-fundamentals                                       |
+| `documentation-writer`   | Roots.io documentation       | clean-code                                             |
+| `explorer-agent`         | Codebase analysis            | bedrock-structure, radicle-development                 |
+| `acf-specialist`         | ACF field groups, blocks     | acf-patterns, blade-patterns                           |
+| `woocommerce-specialist` | Products, orders, WC hooks   | wordpress-patterns, laravel-patterns                   |
 
 ---
 
@@ -58,11 +58,11 @@ Modular knowledge domains that agents can load on-demand.
 
 ### Frontend & Templating
 
-| Skill              | Description                                  |
-| ------------------ | -------------------------------------------- |
-| `blade-patterns`   | Blade directives, components, View Composers |
-| `sage-development` | Radicle theme structure, `app/`, `resources/`   |
-| `acf-patterns`     | ACF field groups, Flexible Content, blocks   |
+| Skill                 | Description                                   |
+| --------------------- | --------------------------------------------- |
+| `blade-patterns`      | Blade directives, components, View Composers  |
+| `radicle-development` | Radicle theme structure, `app/`, `resources/` |
+| `acf-patterns`        | ACF field groups, Flexible Content, blocks    |
 
 ### Backend & PHP
 
@@ -79,11 +79,11 @@ Modular knowledge domains that agents can load on-demand.
 
 ### Infrastructure & Deployment
 
-| Skill                   | Description                               |
-| ----------------------- | ----------------------------------------- |
-| `bedrock-structure`     | Bedrock project structure, Composer, .env |
-| `trellis-deployment`    | Ansible roles, vault, provisioning        |
-| `capistrano-deployment` | Capistrano recipes, Deployer              |
+| Skill                | Description                               |
+| -------------------- | ----------------------------------------- |
+| `bedrock-structure`  | Bedrock project structure, Composer, .env |
+| `trellis-deployment` | Ansible roles, vault, provisioning        |
+| `mina-deployment`    | Mina recipes, Deployer                    |
 
 ### Testing & Quality
 
@@ -130,16 +130,16 @@ Modular knowledge domains that agents can load on-demand.
 
 Slash command procedures. Invoke with `/command`.
 
-| Command       | Description            |
-| ------------- | ---------------------- |
-| `/brainstorm` | Socratic discovery     |
-| `/create`     | Create new features    |
-| `/debug`      | Debug WordPress/PHP    |
-| `/deploy`     | Deploy via Trellis/Cap |
-| `/enhance`    | Improve existing code  |
-| `/plan`       | Task breakdown         |
-| `/status`     | Project health check   |
-| `/test`       | Run PestPHP/PHPUnit    |
+| Command       | Description             |
+| ------------- | ----------------------- |
+| `/brainstorm` | Socratic discovery      |
+| `/create`     | Create new features     |
+| `/debug`      | Debug WordPress/PHP     |
+| `/deploy`     | Deploy via Trellis/Mina |
+| `/enhance`    | Improve existing code   |
+| `/plan`       | Task breakdown          |
+| `/status`     | Project health check    |
+| `/test`       | Run PestPHP/PHPUnit     |
 
 ---
 
@@ -178,18 +178,18 @@ skill-name/
 
 ## 🔗 Quick Reference
 
-| Need        | Agent                    | Skills                                    |
-| ----------- | ------------------------ | ----------------------------------------- |
-| Blade/Theme | `blade-specialist`       | blade-patterns, sage-development          |
-| PHP/Acorn   | `laravel-specialist`     | laravel-patterns                          |
-| WordPress   | `wordpress-specialist`   | wordpress-patterns                        |
-| Database    | `database-architect`     | database-design                           |
-| ACF         | `acf-specialist`         | acf-patterns, blade-patterns              |
-| WooCommerce | `woocommerce-specialist` | wordpress-patterns, laravel-patterns      |
-| Security    | `security-auditor`       | security-fundamentals                     |
-| Testing     | `test-engineer`          | testing-patterns                          |
-| Debug       | `debugger`               | systematic-debugging                      |
-| Deploy      | `devops-engineer`        | trellis-deployment, capistrano-deployment |
-| SEO         | `seo-specialist`         | seo-fundamentals                          |
-| Performance | `performance-optimizer`  | performance-profiling                     |
-| Plan        | `project-planner`        | brainstorming, plan-writing               |
+| Need        | Agent                    | Skills                               |
+| ----------- | ------------------------ | ------------------------------------ |
+| Blade/Theme | `blade-specialist`       | blade-patterns, radicle-development  |
+| PHP/Acorn   | `laravel-specialist`     | laravel-patterns                     |
+| WordPress   | `wordpress-specialist`   | wordpress-patterns                   |
+| Database    | `database-architect`     | database-design                      |
+| ACF         | `acf-specialist`         | acf-patterns, blade-patterns         |
+| WooCommerce | `woocommerce-specialist` | wordpress-patterns, laravel-patterns |
+| Security    | `security-auditor`       | security-fundamentals                |
+| Testing     | `test-engineer`          | testing-patterns                     |
+| Debug       | `debugger`               | systematic-debugging                 |
+| Deploy      | `devops-engineer`        | trellis-deployment, mina-deployment  |
+| SEO         | `seo-specialist`         | seo-fundamentals                     |
+| Performance | `performance-optimizer`  | performance-profiling                |
+| Plan        | `project-planner`        | brainstorming, plan-writing          |

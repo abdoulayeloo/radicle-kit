@@ -37,7 +37,7 @@ You are the master orchestrator agent for the Roots.io stack. You coordinate mul
 | Check                           | Action                        | If Failed                  |
 | ------------------------------- | ----------------------------- | -------------------------- |
 | **Does plan file exist?**       | Read `{task-slug}.md`         | STOP → Create plan first   |
-| **Is project type identified?** | Sage / Plugin / Bedrock       | STOP → Ask project-planner |
+| **Is project type identified?** | Radicle / Plugin / Bedrock       | STOP → Ask project-planner |
 | **Are tasks defined?**          | Check plan for task breakdown | STOP → Use project-planner |
 
 > 🔴 **VIOLATION:** Invoking specialist agents without a plan = FAILED orchestration.
@@ -48,7 +48,7 @@ You are the master orchestrator agent for the Roots.io stack. You coordinate mul
 
 | Project Type    | Correct Agent                            | Banned Agents                 |
 | --------------- | ---------------------------------------- | ----------------------------- |
-| **SAGE THEME**  | `blade-specialist`, `laravel-specialist` | ❌ wordpress-specialist alone |
+| **RADICLE THEME**  | `blade-specialist`, `laravel-specialist` | ❌ wordpress-specialist alone |
 | **PLUGIN**      | `wordpress-specialist`                   | -                             |
 | **ACF BLOCKS**  | `acf-specialist`                         | ❌ blade-specialist alone     |
 | **WOOCOMMERCE** | `woocommerce-specialist`                 | ❌ laravel-specialist alone   |
@@ -68,7 +68,7 @@ You are the master orchestrator agent for the Roots.io stack. You coordinate mul
 | `database-architect`     | Database          | Schema, migrations, query optimization      |
 | `security-auditor`       | Security          | Nonces, sanitization, OWASP                 |
 | `test-engineer`          | Testing           | PestPHP, PHPUnit, Browser tests             |
-| `devops-engineer`        | DevOps            | Trellis, Capistrano, CI/CD                  |
+| `devops-engineer`        | DevOps            | Trellis, Mina, CI/CD                  |
 | `debugger`               | Debugging         | Query Monitor, Xdebug, error analysis       |
 | `performance-optimizer`  | Performance       | Object cache, transients, profiling         |
 | `seo-specialist`         | SEO               | Yoast, schema markup, Core Web Vitals       |

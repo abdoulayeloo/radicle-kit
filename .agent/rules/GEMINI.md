@@ -141,14 +141,14 @@ site/                          # Bedrock root
 
 | Project Type                          | Primary Agent            | Skills                                    |
 | ------------------------------------- | ------------------------ | ----------------------------------------- |
-| **SAGE THEME** (Blade, views, assets) | `blade-specialist`       | blade-patterns, sage-development          |
+| **RADICLE THEME** (Blade, views, assets) | `blade-specialist`       | blade-patterns, radicle-development          |
 | **ACORN/PHP** (Providers, Composers)  | `laravel-specialist`     | laravel-patterns                          |
 | **WORDPRESS** (Hooks, CPT, REST API)  | `wordpress-specialist`   | wordpress-patterns                        |
 | **ACF** (Field groups, blocks)        | `acf-specialist`         | acf-patterns                              |
 | **WOOCOMMERCE** (Products, orders)    | `woocommerce-specialist` | wordpress-patterns                        |
 | **PLUGIN** (Standalone WP plugin)     | `wordpress-specialist`   | wordpress-patterns, laravel-patterns      |
 | **DATABASE** (Schema, queries)        | `database-architect`     | database-design                           |
-| **DEPLOYMENT** (Server, CI/CD)        | `devops-engineer`        | trellis-deployment, capistrano-deployment |
+| **DEPLOYMENT** (Server, CI/CD)        | `devops-engineer`        | trellis-deployment, mina-deployment |
 
 ### 🛑 Socratic Gate
 
@@ -203,7 +203,7 @@ After editing any PHP/Blade file:
 ### Key Skills
 
 - `clean-code`, `blade-patterns`, `laravel-patterns`, `wordpress-patterns`
-- `bedrock-structure`, `sage-development`, `acf-patterns`
+- `bedrock-structure`, `radicle-development`, `acf-patterns`
 - `security-fundamentals`, `testing-patterns`, `systematic-debugging`
 
 ---

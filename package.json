@@ -1,7 +1,7 @@
 {
   "name": "@ablayelo/roots-kit",
-  "version": "1.0.0",
-  "description": "AI agent army for the Roots.io stack (Bedrock, Sage, Acorn, Trellis, Bud). 16 agents, 18 skills, 8 workflows.",
+  "version": "1.1.0",
+  "description": "AI agent army for the Roots.io stack (Bedrock, Radicle, Acorn, Trellis, Vite). 16 agents, 18 skills, 8 workflows.",
   "keywords": [
     "roots",
     "bedrock",
