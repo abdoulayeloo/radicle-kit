@@ -1,0 +1,30 @@
+{
+  "name": "@ablayelo/roots-kit",
+  "version": "1.0.0",
+  "description": "AI agent army for the Roots.io stack (Bedrock, Sage, Acorn, Trellis, Bud). 16 agents, 18 skills, 8 workflows.",
+  "keywords": [
+    "roots",
+    "bedrock",
+    "sage",
+    "acorn",
+    "trellis",
+    "wordpress",
+    "ai-agents",
+    "gemini",
+    "cursor",
+    "codex"
+  ],
+  "author": "layelo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/layelo/roots-kit"
+  },
+  "bin": {
+    "roots-kit": "bin/roots-kit.js"
+  },
+  "files": [
+    "bin/",
+    ".agent/"
+  ]
+}
