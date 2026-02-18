@@ -103,16 +103,6 @@ wp acorn vendor:publish     # Publish package configs
 @vite(['resources/styles/app.css', 'resources/scripts/app.js'])
 ```
 
-## Radicle vs Sage
-
-| Feature           | Radicle     | Radicle           |
-| ----------------- | ----------- | -------------- |
-| Build tool        | Vite        | Bud.js         |
-| Closer to         | Laravel     | WordPress      |
-| Config format     | TypeScript  | JavaScript     |
-| Acorn integration | Deep        | Standard       |
-| HMR               | Vite native | Bud dev server |
-
 ## Radicle Conventions
 
 | Convention | Rule                                                          |
