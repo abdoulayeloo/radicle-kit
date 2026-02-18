@@ -1,4 +1,4 @@
-# @ablayelo/roots-kit
+# @ablayelo/radicle-kit
 
 > 🌱 AI agent army for the Roots.io stack — Bedrock, Radicle, Acorn, Trellis, Vite.
 
@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install -g @ablayelo/roots-kit
+npm install -g @ablayelo/radicle-kit
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install -g @ablayelo/roots-kit
 Navigate to your Bedrock/Radicle project root and run:
 
 ```bash
-roots-kit
+radicle-kit
 ```
 
 This copies the `.agent/` directory into your project. Your AI coding assistant (Gemini, Cursor, Codex, etc.) will automatically pick up the agents, skills, and workflows.
@@ -25,7 +25,7 @@ This copies the `.agent/` directory into your project. Your AI coding assistant 
 If `.agent/` already exists:
 
 ```bash
-roots-kit --force
+radicle-kit --force
 ```
 
 ## What's Inside

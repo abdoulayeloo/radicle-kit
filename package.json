@@ -1,5 +1,5 @@
 {
-  "name": "@ablayelo/roots-kit",
+  "name": "@ablayelo/radicle-kit",
   "version": "1.1.3",
   "description": "AI agent army for the Roots.io stack (Bedrock, Radicle, Acorn, Trellis, Vite). 16 agents, 18 skills, 8 workflows.",
   "keywords": [
@@ -14,14 +14,14 @@
     "cursor",
     "codex"
   ],
-  "author": "layelo",
+  "author": "Ablaye LO",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/abdoulayeloo/roots-kit"
+    "url": "https://github.com/abdoulayeloo/radicle-kit"
   },
   "bin": {
-    "roots-kit": "bin/roots-kit.js"
+    "radicle-kit": "bin/radicle-kit.js"
   },
   "files": [
     "bin/",

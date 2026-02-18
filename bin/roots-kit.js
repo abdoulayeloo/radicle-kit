@@ -68,10 +68,10 @@ function main() {
       console.log(yellow("  ⚠ .agent/ already exists in this directory."));
       console.log("");
       console.log(
-        `  Run ${bold("roots-kit --update")} to update files in place.`,
+        `  Run ${bold("radicle-kit --update")} to update files in place.`,
       );
       console.log(
-        `  Run ${bold("roots-kit --force")} to overwrite everything.`,
+        `  Run ${bold("radicle-kit --force")} to overwrite everything.`,
       );
       console.log("");
       process.exit(0);
