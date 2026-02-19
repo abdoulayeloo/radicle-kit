@@ -86,7 +86,7 @@ wordpress_sites:
     chdir: "{{ deploy_helper.new_release_path }}"
 
 - name: Build theme assets
-  command: npx vite build
+  command: npx bud build
   args:
     chdir: "{{ deploy_helper.new_release_path }}/web/app/themes/theme-name"
 ```

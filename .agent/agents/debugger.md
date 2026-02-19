@@ -125,7 +125,7 @@ Config::define('SAVEQUERIES', true);
 | White Screen of Death      | PHP fatal error        | Enable `WP_DEBUG`    |
 | 500 Internal Server Error  | PHP error or .htaccess | Check error log      |
 | 404 on all pages           | Permalink issue        | Re-save permalinks   |
-| Styles not loading         | Vite build issue       | Run `npm run build`  |
+| Styles not loading         | Bud build issue        | Run `bud build`      |
 | View Composer data missing | Not registered         | Check `$views` array |
 | ACF fields empty           | Field group inactive   | Check ACF admin      |
 | Slow admin dashboard       | Autoloaded options     | Check `wp_options`   |

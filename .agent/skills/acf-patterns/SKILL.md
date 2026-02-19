@@ -1,6 +1,6 @@
 ---
 name: acf-patterns
-description: ACF development patterns for field groups, Flexible Content, Repeaters, Gutenberg blocks, and options pages within Radicle themes.
+description: ACF development patterns for field groups, Flexible Content, Repeaters, Gutenberg blocks, and options pages within Sage themes.
 ---
 
 # ACF Patterns — Advanced Custom Fields

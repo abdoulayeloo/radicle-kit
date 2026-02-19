@@ -1,5 +1,5 @@
 ---
-description: Deploy WordPress site via Trellis or Mina
+description: Deploy WordPress site via Trellis or Capistrano
 ---
 
 # /deploy — Production Deployment Flow
@@ -22,7 +22,7 @@ Examples:
 ```markdown
 - [ ] All changes committed and pushed
 - [ ] Tests passing
-- [ ] Build succeeds (`npx vite build`)
+- [ ] Build succeeds (`npx bud build`)
 - [ ] No WP_DEBUG errors
 - [ ] Database migrations run (if any)
 - [ ] Vault encrypted (Trellis)
@@ -35,7 +35,7 @@ Examples:
 → Activate: @devops-engineer
 → Detect deployment method:
    - trellis/ exists → Trellis deployment
-   - config/deploy.rb exists → Mina deployment
+   - config/deploy.rb exists → Capistrano deployment
    - deploy.php exists → Deployer deployment
    - None detected → Ask user
 ```
@@ -46,8 +46,8 @@ Examples:
 # Trellis
 trellis check production
 
-# Mina
-mina deploy -t staging -- check
+# Capistrano
+cap production deploy:check
 ```
 
 ### Phase 2: Build Assets
@@ -56,7 +56,7 @@ mina deploy -t staging -- check
 # Local build (if required)
 cd web/app/themes/theme-name
 npm ci
-npx vite build
+npx bud build
 ```
 
 ### Phase 3: Deploy
@@ -65,8 +65,8 @@ npx vite build
 # Trellis
 trellis deploy production
 
-# Mina
-mina deploy
+# Capistrano
+cap production deploy
 
 # Deployer
 dep deploy production
@@ -88,8 +88,8 @@ dep deploy production
 # Trellis
 trellis rollback production
 
-# Mina
-mina rollback
+# Capistrano
+cap production deploy:rollback
 ```
 
 ### Output Format

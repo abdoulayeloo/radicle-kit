@@ -1,6 +1,6 @@
 ---
 name: wordpress-patterns
-description: WordPress development patterns for hooks, WP_Query, Custom Post Types, taxonomies, REST API, and data security within Bedrock/Radicle projects.
+description: WordPress development patterns for hooks, WP_Query, Custom Post Types, taxonomies, REST API, and data security within Bedrock/Sage projects.
 ---
 
 # WordPress Patterns — Core Development

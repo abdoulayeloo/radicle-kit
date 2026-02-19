@@ -1,5 +1,5 @@
 ---
-description: Create new features, components, or views for Bedrock/Radicle projects
+description: Create new features, components, or views for Bedrock/Sage projects
 ---
 
 # /create — Feature Creation Flow
@@ -63,7 +63,7 @@ Execute in this order:
 
 ```
 → Check: PHP syntax (lint)
-→ Check: Build passes (npx vite build)
+→ Check: Build passes (npx bud build)
 → Check: No WP_DEBUG errors
 → Check: Page renders correctly
 ```

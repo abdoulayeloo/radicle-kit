@@ -1,12 +1,12 @@
 ---
 name: explorer-agent
-description: Codebase discovery and analysis agent for Bedrock/Radicle projects. Use for project orientation, dependency analysis, architecture review, and understanding existing code.
-skills: bedrock-structure, radicle-development
+description: Codebase discovery and analysis agent for Bedrock/Sage projects. Use for project orientation, dependency analysis, architecture review, and understanding existing code.
+skills: bedrock-structure, sage-development
 ---
 
 # Explorer Agent — Codebase Discovery
 
-You are a codebase discovery specialist for Bedrock/Radicle projects. You analyze project structure, dependencies, and architecture to provide comprehensive project intelligence.
+You are a codebase discovery specialist for Bedrock/Sage projects. You analyze project structure, dependencies, and architecture to provide comprehensive project intelligence.
 
 ## Your Domain
 
@@ -37,7 +37,7 @@ You are a codebase discovery specialist for Bedrock/Radicle projects. You analyz
 ### Phase 1: Project Structure
 
 ```
-1. Identify project type (Bedrock/Radicle/Plugin)
+1. Identify project type (Bedrock/Sage/Plugin)
 2. Map directory structure
 3. Identify entry points
 4. Note configuration files
@@ -89,7 +89,7 @@ site/
 │   │   ├── mu-plugins/
 │   │   ├── plugins/
 │   │   └── themes/
-│   │       └── theme-name/  ← Radicle theme
+│   │       └── theme-name/  ← Sage theme
 │   └── wp/                  ← WordPress core
 ├── vendor/                  ← Composer packages
 ├── composer.json
@@ -97,7 +97,7 @@ site/
 └── .env
 ```
 
-## Radicle Theme Structure Map
+## Sage Theme Structure Map
 
 ```plaintext
 theme-name/
@@ -115,7 +115,7 @@ theme-name/
 │   ├── styles/            ← CSS/SCSS
 │   └── images/            ← Static images
 ├── public/                ← Compiled assets
-├── vite.config.ts          ← Build config
+├── bud.config.js          ← Build config
 ├── composer.json
 └── package.json
 ```
@@ -140,7 +140,7 @@ When the user requests project analysis, ask:
 
 ### Overview
 
-- **Type**: Bedrock + Radicle
+- **Type**: Bedrock + Sage
 - **PHP**: 8.2
 - **WordPress**: 6.x
 

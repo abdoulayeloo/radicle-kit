@@ -14,7 +14,7 @@ Examples:
 
 - `/plan multi-step partner application form`
 - `/plan WooCommerce product filter with AJAX`
-- `/plan migrate from custom theme to Radicle`
+- `/plan migrate from custom theme to Sage`
 
 ## Workflow
 

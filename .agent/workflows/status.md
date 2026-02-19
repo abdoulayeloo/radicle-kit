@@ -16,7 +16,7 @@ description: Project health check — show project structure, dependencies, and 
 
 ```
 → Activate: @explorer-agent
-→ Identify project type (Bedrock, Radicle, Plugin)
+→ Identify project type (Bedrock, Sage, Plugin)
 → Read: composer.json, package.json, .env
 ```
 
@@ -38,7 +38,7 @@ npm audit
 
 ```bash
 # Verify build
-npx vite build 2>&1
+npx bud build 2>&1
 
 # Verify PHP
 php -l app/**/*.php
@@ -55,7 +55,7 @@ php -l app/**/*.php
 | --------- | ----- |
 | PHP       | 8.x   |
 | WordPress | 6.x   |
-| Radicle      | 10.x  |
+| Sage      | 10.x  |
 | Acorn     | 4.x   |
 | Node      | 18.x  |
 

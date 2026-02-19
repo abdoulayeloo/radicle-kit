@@ -1,11 +1,11 @@
 ---
-name: radicle-development
-description: Radicle theme development patterns, directory structure, setup conventions, Vite build tooling, and asset management.
+name: sage-development
+description: Sage theme development patterns, directory structure, setup conventions, Bud build tooling, and asset management.
 ---
 
-# Radicle Development — Theme Framework
+# Sage Development — Theme Framework
 
-## Radicle Directory Structure
+## Sage Directory Structure
 
 ```plaintext
 theme-name/
@@ -28,7 +28,7 @@ theme-name/
 │   ├── styles/             # CSS/SCSS (app.css, editor.css)
 │   └── images/             # Static images
 ├── public/                 # Compiled assets (don't edit)
-├── vite.config.ts          # Vite build configuration
+├── bud.config.js           # Build configuration
 ├── composer.json           # PHP dependencies
 ├── package.json            # Node dependencies
 └── tailwind.config.js      # Tailwind (if used)
@@ -55,36 +55,29 @@ add_action('after_setup_theme', function () {
 });
 ```
 
-## Vite Configuration
+## Bud Configuration
 
-```typescript
-// vite.config.ts
-import { defineConfig } from "vite";
-import laravel from "laravel-vite-plugin";
-
-export default defineConfig({
-  plugins: [
-    laravel({
-      input: [
-        "resources/styles/app.css",
-        "resources/scripts/app.js",
-        "resources/styles/editor.css",
-        "resources/scripts/editor.js",
-      ],
-      refresh: true,
-    }),
-  ],
-});
+```javascript
+// bud.config.js
+export default async (app) => {
+  app
+    .entry("app", ["@scripts/app", "@styles/app"])
+    .entry("editor", ["@scripts/editor", "@styles/editor"])
+    .assets(["images"])
+    .setPublicPath("/app/themes/theme-name/public/")
+    .setProxyUrl("https://example.test")
+    .watch(["resources/views/**/*.blade.php"]);
+};
 ```
 
 ## Common Commands
 
 ```bash
 # Development (with hot reload)
-npm run dev
+npx bud dev
 
 # Production build
-npm run build
+npx bud build
 
 # Composer (PHP dependencies)
 composer install
@@ -96,20 +89,12 @@ wp acorn optimize:clear     # Clear all caches
 wp acorn vendor:publish     # Publish package configs
 ```
 
-## Vite Asset Helpers in Blade
+## Sage Conventions
 
-```blade
-{{-- In your layout --}}
-@vite(['resources/styles/app.css', 'resources/scripts/app.js'])
-```
-
-## Radicle Conventions
-
-| Convention | Rule                                                          |
-| ---------- | ------------------------------------------------------------- |
-| Views      | `resources/views/` — always Blade                             |
-| Logic      | `app/` — PHP classes only                                     |
-| Assets     | `resources/scripts/` + `resources/styles/` — source files     |
-| Public     | `public/` — compiled output (gitignored)                      |
-| Config     | Root files: `vite.config.ts`, `composer.json`, `package.json` |
-| Build      | `npm run dev` / `npm run build` via Vite                      |
+| Convention | Rule                                                         |
+| ---------- | ------------------------------------------------------------ |
+| Views      | `resources/views/` — always Blade                            |
+| Logic      | `app/` — PHP classes only                                    |
+| Assets     | `resources/scripts/` + `resources/styles/` — source files    |
+| Public     | `public/` — compiled output (gitignored)                     |
+| Config     | Root files: `bud.config.js`, `composer.json`, `package.json` |

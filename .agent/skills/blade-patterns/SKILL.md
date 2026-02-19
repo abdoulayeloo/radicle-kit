@@ -1,9 +1,9 @@
 ---
 name: blade-patterns
-description: Best practices for Blade templating in Radicle themes. Covers directives, components, View Composers, layouts, and the template hierarchy.
+description: Best practices for Blade templating in Sage themes. Covers directives, components, View Composers, layouts, and the template hierarchy.
 ---
 
-# Blade Patterns — Radicle Theme Templating
+# Blade Patterns — Sage Theme Templating
 
 ## Blade Directives
 
@@ -22,7 +22,7 @@ description: Best practices for Blade templating in Radicle themes. Covers direc
 | `@if` / `@unless`     | Conditionals           | `@if ($condition)`                          |
 | `@php`                | Inline PHP (avoid)     | `@php ... @endphp`                          |
 
-### WordPress-Specific Directives (Radicle)
+### WordPress-Specific Directives (Sage)
 
 | Directive                | Purpose              |
 | ------------------------ | -------------------- |
@@ -36,11 +36,11 @@ description: Best practices for Blade templating in Radicle themes. Covers direc
 
 ---
 
-## Template Hierarchy in Radicle
+## Template Hierarchy in Sage
 
 ```plaintext
 WordPress request
-  └── Radicle template (Blade)
+  └── Sage template (Blade)
         ├── page.blade.php         → All pages
         ├── page-{slug}.blade.php  → Specific page by slug
         ├── single.blade.php       → All single posts

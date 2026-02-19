@@ -4,7 +4,7 @@ trigger: always_on
 
 # GEMINI.md - Radicle Kit
 
-> This file defines how the AI behaves in Roots.io (Bedrock/Radicle/Acorn) workspaces.
+> This file defines how the AI behaves in Roots.io (Bedrock/Sage/Acorn) workspaces.
 
 ---
 
@@ -107,10 +107,10 @@ site/                          # Bedrock root
 │   │   ├── mu-plugins/        # Must-use plugins
 │   │   ├── plugins/           # Regular plugins
 │   │   └── themes/
-│   │       └── your-theme/    # Radicle theme
+│   │       └── your-theme/    # Sage theme
 │   │           ├── app/       # PHP application (Providers, Composers, etc.)
 │   │           ├── resources/ # Blade views, assets
-│   │           └── vite.config.ts
+│   │           └── bud.config.js
 │   └── wp/                    # WordPress core (don't touch)
 ├── composer.json              # Dependencies
 └── .env                       # Environment variables
@@ -139,16 +139,16 @@ site/                          # Bedrock root
 
 ### 📱 Project Type Routing
 
-| Project Type                          | Primary Agent            | Skills                                    |
-| ------------------------------------- | ------------------------ | ----------------------------------------- |
-| **RADICLE THEME** (Blade, views, assets) | `blade-specialist`       | blade-patterns, radicle-development          |
-| **ACORN/PHP** (Providers, Composers)  | `laravel-specialist`     | laravel-patterns                          |
-| **WORDPRESS** (Hooks, CPT, REST API)  | `wordpress-specialist`   | wordpress-patterns                        |
-| **ACF** (Field groups, blocks)        | `acf-specialist`         | acf-patterns                              |
-| **WOOCOMMERCE** (Products, orders)    | `woocommerce-specialist` | wordpress-patterns                        |
-| **PLUGIN** (Standalone WP plugin)     | `wordpress-specialist`   | wordpress-patterns, laravel-patterns      |
-| **DATABASE** (Schema, queries)        | `database-architect`     | database-design                           |
-| **DEPLOYMENT** (Server, CI/CD)        | `devops-engineer`        | trellis-deployment, mina-deployment |
+| Project Type                          | Primary Agent            | Skills                                                                                  |
+| ------------------------------------- | ------------------------ | --------------------------------------------------------------------------------------- |
+| **SAGE THEME** (Blade, views, assets) | `blade-specialist`       | blade-patterns, sage-development, tailwindcss-v4, daisyui-v5, alpinejs, bootstrap-icons |
+| **ACORN/PHP** (Providers, Composers)  | `laravel-specialist`     | laravel-patterns                                                                        |
+| **WORDPRESS** (Hooks, CPT, REST API)  | `wordpress-specialist`   | wordpress-patterns                                                                      |
+| **ACF** (Field groups, blocks)        | `acf-specialist`         | acf-patterns                                                                            |
+| **WOOCOMMERCE** (Products, orders)    | `woocommerce-specialist` | wordpress-patterns                                                                      |
+| **PLUGIN** (Standalone WP plugin)     | `wordpress-specialist`   | wordpress-patterns, laravel-patterns                                                    |
+| **DATABASE** (Schema, queries)        | `database-architect`     | database-design                                                                         |
+| **DEPLOYMENT** (Server, CI/CD)        | `devops-engineer`        | trellis-deployment, capistrano-deployment                                               |
 
 ### 🛑 Socratic Gate
 
@@ -203,7 +203,8 @@ After editing any PHP/Blade file:
 ### Key Skills
 
 - `clean-code`, `blade-patterns`, `laravel-patterns`, `wordpress-patterns`
-- `bedrock-structure`, `radicle-development`, `acf-patterns`
+- `bedrock-structure`, `sage-development`, `acf-patterns`
+- `tailwindcss-v4`, `daisyui-v5`, `alpinejs`, `bootstrap-icons`
 - `security-fundamentals`, `testing-patterns`, `systematic-debugging`
 
 ---
